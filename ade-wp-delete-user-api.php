@@ -1,7 +1,3 @@
-# WP-Delete-User-API
-
-```php
-
 <?php
 
 /**
@@ -46,6 +42,3 @@ function ade_delete_user_api_callback(WP_REST_Request $request)
     wp_delete_user($user->ID);
     return new WP_REST_Response('User deleted', 200);
 }
-
-
-```
